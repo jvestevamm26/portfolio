@@ -1,0 +1,227 @@
+
+/* Global */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f6fa;
+  color: #111;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Page */
+.page {
+  padding: 20px;
+}
+
+/*   NAVBAR */
+nav {
+  background: #1e1e2f;
+  color: white;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+nav h2 {
+  margin-right: auto;
+  font-size: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+nav a:hover {
+  background: #343454;
+}
+
+/* BUTTONS */
+button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+/* INPUTS */
+input {
+  padding: 10px;
+  margin: 5px 0;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/*   CARDS */
+.card {
+  background: white;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+
+/*  DARK MODE */
+
+body.dark {
+  background: #121212;
+  color: #ffffff;
+}
+
+/* navbar dark */
+body.dark nav {
+  background: #1b1b1b;
+}
+
+/* links */
+body.dark nav a {
+  color: white;
+}
+
+body.dark nav a:hover {
+  background: #333;
+}
+
+/* cards */
+body.dark .card {
+  background: #1f1f1f;
+  color: white;
+  box-shadow: 0 2px 6px rgba(255,255,255,0.05);
+}
+
+/* inputs */
+body.dark input {
+  background: #2a2a2a;
+  color: white;
+  border: 1px solid #444;
+}
+
+/* buttons */
+body.dark button {
+  background: #333;
+  color: white;
+}
+
+
+
+/* FOOTER */
+
+.footer-line {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #1e1e2f;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 15px;
+  font-size: 14px;
+}
+
+/* right side time */
+.footer-time {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+/* dark mode footer */
+body.dark .footer-line {
+  background: #111;
+  color: #fff;
+}
+
+/*  TECH TAGS */
+
+.tech-tag {
+  font-size: 12px;
+  padding: 4px 6px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+body.dark .tech-tag {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+/*  HOVER EFFECTS */
+
+/* CARDS */
+.card {
+  transition: all 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+body.dark .card:hover {
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.08);
+}
+
+/* BUTTONS */
+button {
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* NAV LINKS */
+nav a {
+  transition: all 0.2s ease;
+}
+
+nav a:hover {
+  transform: translateY(-2px);
+}
+
+/* IMAGES INSIDE CARDS */
+.card img {
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+/* TECH TAGS */
+.tech-tag {
+  transition: all 0.2s ease;
+}
+
+.tech-tag:hover {
+  transform: scale(1.1);
+  background: #4a90e2;
+  color: white;
+}
+
+/* LINKS */
+a {
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
